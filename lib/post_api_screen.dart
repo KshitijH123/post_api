@@ -11,14 +11,13 @@ class PostApiScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        title: const Text('Login :-'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Username Field
             Container(
               margin: const EdgeInsets.only(bottom: 16.0),
               decoration: BoxDecoration(
@@ -36,13 +35,12 @@ class PostApiScreen extends StatelessWidget {
                 controller: _controller.usernameController,
                 decoration: InputDecoration(
                   border: InputBorder.none,
-                  labelText: 'Username',
+                  labelText: 'Username :-',
                   contentPadding: const EdgeInsets.all(16.0),
                 ),
               ),
             ),
 
-            // Email Field
             Container(
               margin: const EdgeInsets.only(bottom: 16.0),
               decoration: BoxDecoration(
@@ -60,14 +58,13 @@ class PostApiScreen extends StatelessWidget {
                 controller: _controller.emailController,
                 decoration: InputDecoration(
                   border: InputBorder.none,
-                  labelText: 'Email',
+                  labelText: 'Email :-',
                   contentPadding: const EdgeInsets.all(16.0),
                 ),
                 keyboardType: TextInputType.emailAddress,
               ),
             ),
 
-            // Gender Dropdown
             Container(
               margin: const EdgeInsets.only(bottom: 16.0),
               decoration: BoxDecoration(
@@ -94,18 +91,19 @@ class PostApiScreen extends StatelessWidget {
                     .toList(),
                 decoration: const InputDecoration(
                   border: InputBorder.none,
-                  labelText: 'Gender',
+                  labelText: 'Gender :-',
                   contentPadding: EdgeInsets.all(16.0),
                 ),
               ),
             ),
 
-            // Submit Button
-            ElevatedButton(
-              onPressed: () async {
-                await _controller.submitForm();
-              },
-              child: const Text('Submit'),
+            Center(
+              child: ElevatedButton(
+                onPressed: () async {
+                  await _controller.submitForm();
+                },
+                child: const Text('Submit',style: TextStyle(fontSize: 24,fontWeight: FontWeight.w400),),
+              ),
             ),
           ],
         ),
