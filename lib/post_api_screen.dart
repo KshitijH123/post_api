@@ -97,14 +97,22 @@ class PostApiScreen extends StatelessWidget {
               ),
             ),
 
-            Center(
-              child: ElevatedButton(
-                onPressed: () async {
-                  await _controller.submitForm();
-                },
-                child: const Text('Submit',style: TextStyle(fontSize: 24,fontWeight: FontWeight.w400),),
+           Center(
+              child: SizedBox(
+                width: 200, 
+                height: 60, 
+                child: ElevatedButton(
+                  onPressed: () async {
+                    await _controller.submitForm();
+                  },
+                  child: const Text(
+                    'Submit',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400),
+                  ),
+                ),
               ),
             ),
+
           ],
         ),
       ),
