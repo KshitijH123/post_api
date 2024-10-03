@@ -99,7 +99,7 @@ class PostApiScreen extends StatelessWidget {
 
            Center(
               child: SizedBox(
-                width: 200, 
+                width: 600, 
                 height: 60, 
                 child: ElevatedButton(
                   onPressed: () async {
@@ -107,7 +107,7 @@ class PostApiScreen extends StatelessWidget {
                   },
                   child: const Text(
                     'Submit',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400),
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
