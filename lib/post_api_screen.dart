@@ -107,7 +107,7 @@ class PostApiScreen extends StatelessWidget {
                   },
                   child: const Text(
                     'Submit',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
                   ),
                 ),
               ),
