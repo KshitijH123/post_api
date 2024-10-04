@@ -31,14 +31,19 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Home Screen'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => PostApiScreen()),
-            );
-          },
-          child: const Text('Go to Post API Screen'),
+        child: SizedBox(
+          width: 400,
+          height: 42,
+          child: ElevatedButton(
+            
+            onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => PostApiScreen()),
+              );
+            },
+            child: const Text('Go to Post API Screen'),
+          ),
         ),
       ),
     );
