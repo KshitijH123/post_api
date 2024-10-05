@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => PostApiScreen()),
               );
             },
-            child: const Text('Go to Post API Screen'),
+            child: const Text('Go to Post API Screen',style: TextStyle(fontWeight: FontWeight.w600),),
           ),
         ),
       ),
