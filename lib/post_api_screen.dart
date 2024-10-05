@@ -23,7 +23,7 @@ class PostApiScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
-                boxShadow: [
+                boxShadow:const [
                   BoxShadow(
                     color: Colors.black12,
                     blurRadius: 6,
@@ -33,7 +33,7 @@ class PostApiScreen extends StatelessWidget {
               ),
               child: TextField(
                 controller: _controller.usernameController,
-                decoration: InputDecoration(
+                decoration:const InputDecoration(
                   border: InputBorder.none,
                   labelText: 'Username :-',
                   contentPadding: const EdgeInsets.all(16.0),
@@ -46,7 +46,7 @@ class PostApiScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
-                boxShadow: [
+                boxShadow:const [
                   BoxShadow(
                     color: Colors.black12,
                     blurRadius: 6,
@@ -56,10 +56,10 @@ class PostApiScreen extends StatelessWidget {
               ),
               child: TextField(
                 controller: _controller.emailController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: InputBorder.none,
                   labelText: 'Email :-',
-                  contentPadding: const EdgeInsets.all(16.0),
+                  contentPadding: EdgeInsets.all(16.0),
                 ),
                 keyboardType: TextInputType.emailAddress,
               ),
@@ -70,11 +70,11 @@ class PostApiScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.black12,
                     blurRadius: 6,
-                    offset: const Offset(0, 3),
+                    offset: Offset(0, 3),
                   ),
                 ],
               ),
